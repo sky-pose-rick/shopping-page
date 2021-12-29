@@ -59,4 +59,5 @@ describe('', () => {
   });
 
   it.todo('test input validation');
+  it.todo('reset qty on submit');
 });
