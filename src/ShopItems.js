@@ -1,9 +1,13 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
+import uniqid from 'uniqid';
 
 import ItemCard from './ItemCard';
 
 function ShopItems(props) {
-  const { items, onAddToCart } = props;
+  let { items, onAddToCart } = props;
+  if (!items) { items = []; }
+  if (!onAddToCart) { onAddToCart = null; }
 
   return (
     <div className="ShopItems">
@@ -11,7 +15,7 @@ function ShopItems(props) {
       <ul>
         {
           items.map((item) => (
-            <li key={item.id}>
+            <li key={item.id || uniqid()}>
               <ItemCard
                 title={item.title}
                 src={item.src}
