@@ -59,5 +59,14 @@ describe('', () => {
   });
 
   it.todo('test input validation');
-  it.todo('reset qty on submit');
+
+  it('reset qty on submit', () => {
+    const text = screen.getByRole('textbox');
+    fireEvent.change(text, { target: { value: 5 } });
+    const buttons = screen.getAllByRole('button');
+    fireEvent.click(buttons[2]);
+
+    // expect value to be set to 0
+    expect(text.value).toEqual('0');
+  });
 });

@@ -28,7 +28,15 @@ function ItemCard(props) {
       <button type="button" onClick={decrease} disabled={qty <= 0}>-</button>
       <input type="text" onChange={(e) => onChange(e)} value={qty} />
       <button type="button" onClick={increase}>+</button>
-      <button type="submit" onClick={() => { onSubmit(qty); }}>-</button>
+      <button
+        type="submit"
+        onClick={() => {
+          onSubmit(qty);
+          setQty(0);
+        }}
+      >
+        Add to Cart
+      </button>
     </div>
   );
 }
