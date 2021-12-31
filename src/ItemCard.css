@@ -1,0 +1,37 @@
+.ItemCard {
+	border: 3px solid white;
+	padding: 15px;
+	border-radius: 50px;
+	height: 400px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+  background-color: chocolate;
+}
+
+.ItemCard img {
+	max-width: 100%;
+	max-height: 50%;
+}
+
+.ItemCard .inputs {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ItemCard .input-row {
+  display: flex;
+}
+
+.ItemCard .input-row input {
+  width: 100px;
+}
+
+.ItemCard h3 {
+	text-align: center;
+}
+
+.ItemCard > .inputs > button {
+	width: 100%;
+}

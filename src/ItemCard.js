@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import './ItemCard.css';
 
 function ItemCard(props) {
   const {
@@ -25,19 +26,25 @@ function ItemCard(props) {
     <div className="ItemCard">
       <h3>{title}</h3>
       <img src={src} alt={alt} />
-      <button type="button" onClick={decrease} disabled={qty <= 0}>-</button>
-      <input type="text" onChange={(e) => onChange(e)} value={qty} />
-      <button type="button" onClick={increase}>+</button>
-      <button
-        type="submit"
-        disabled={qty <= 0}
-        onClick={() => {
-          onSubmit(qty);
-          setQty(0);
-        }}
-      >
-        Add to Cart
-      </button>
+      <div className="inputs">
+        <div className="input-row">
+          <button type="button" onClick={decrease} disabled={qty <= 0}>-</button>
+          <input type="text" onChange={(e) => onChange(e)} value={qty} />
+          <button type="button" onClick={increase}>+</button>
+        </div>
+        <button
+          type="submit"
+          disabled={qty <= 0}
+          onClick={() => {
+            onSubmit(qty);
+            setQty(0);
+          }}
+        >
+          Add to Cart
+        </button>
+
+      </div>
+
     </div>
   );
 }

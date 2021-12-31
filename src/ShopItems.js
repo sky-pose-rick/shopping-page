@@ -11,7 +11,6 @@ function ShopItems(props) {
 
   return (
     <div className="ShopItems">
-      My Shop
       <ul>
         {
           items.map((item) => (
