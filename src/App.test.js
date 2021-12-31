@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import App from './App';
 
-it('app renders', () => {
+it('app renders the homepage', () => {
   render(<App />);
-  expect(screen.getByText(/my app/i)).toBeInTheDocument();
+  expect(screen.getByText(/homepage/i)).toBeInTheDocument();
 });
