@@ -30,6 +30,7 @@ function ItemCard(props) {
       <button type="button" onClick={increase}>+</button>
       <button
         type="submit"
+        disabled={qty <= 0}
         onClick={() => {
           onSubmit(qty);
           setQty(0);

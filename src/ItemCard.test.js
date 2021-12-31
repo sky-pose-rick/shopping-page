@@ -56,6 +56,7 @@ describe('', () => {
     const text = screen.getByRole('textbox');
     fireEvent.change(text, { target: { value: 0 } });
     expect(buttons[0].disabled).toBe(true);
+    expect(buttons[2].disabled).toBe(true);
   });
 
   it.todo('test input validation');
