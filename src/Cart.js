@@ -15,6 +15,7 @@ function Cart(props) {
         {value}
         )
       </p>
+      <button type="button">Checkout</button>
     </div>
   );
 }
