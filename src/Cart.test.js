@@ -13,3 +13,8 @@ it('has a button', () => {
   render(<Cart />);
   expect(screen.getByRole('button')).toBeInTheDocument();
 });
+
+it('has an image', () => {
+  render(<Cart />);
+  expect(screen.getByRole('img')).toBeInTheDocument();
+});
