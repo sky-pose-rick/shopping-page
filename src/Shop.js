@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ShopItems from './ShopItems';
 import Cart from './Cart';
 import apiHelper from './apiHelper';
+import './Shop.css';
 
 function Shop() {
   const [qty, setQty] = useState(0);

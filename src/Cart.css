@@ -1,0 +1,14 @@
+.Cart {
+	position: sticky;
+	top: 0px;
+	background-color: lightgreen;
+	width: max-content;
+	display: flex;
+	justify-content: right;
+	margin-right: 0;
+	margin-left: auto;
+	padding: 10px;
+	border-radius: 10%;
+	align-items: center;
+	gap: 10px;
+}

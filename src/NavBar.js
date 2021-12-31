@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './NavBar.css';
 
 function NavBar() {
   return (
-    <div className="Navbar">
+    <div className="NavBar">
       <h1>
         Shoppage
       </h1>

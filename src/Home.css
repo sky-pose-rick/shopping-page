@@ -1,0 +1,14 @@
+.Home {
+	width: 66%;
+	margin: auto;
+	background-color: white;
+	padding: 20px;
+	min-height: 60vh;
+}
+
+.Home h2 {
+	padding: 0;
+	text-decoration: underline;
+	margin-left: 20px;
+	margin-top: 0;
+}
