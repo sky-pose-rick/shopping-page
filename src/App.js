@@ -11,8 +11,8 @@ function App() {
     <BrowserRouter className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/shopping-page/shop" element={<Shop />} />
+        <Route path="/shopping-page/" element={<Home />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

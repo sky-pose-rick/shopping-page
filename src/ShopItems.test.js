@@ -31,10 +31,6 @@ describe('', () => {
     render(<ShopItems items={itemData} onAddToCart={mockAddItem} />);
   });
 
-  it('render ShopItems component', () => {
-    expect(screen.getByText(/my shop/i)).toBeInTheDocument();
-  });
-
   it('has a list that displays items', () => {
     expect(screen.getByRole('list')).toBeInTheDocument();
     expect(screen.getAllByRole('listitem').length).toBe(3);

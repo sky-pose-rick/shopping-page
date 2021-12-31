@@ -8,7 +8,7 @@ function Cart(props) {
 
   return (
     <div className="Cart">
-      <img src="./shopping-page/img/cart_24dp.png" alt="Cart: " />
+      <img src="./img/cart_24dp.png" alt="Cart: " />
       <p>
         (
         {value}

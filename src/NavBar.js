@@ -10,8 +10,8 @@ function NavBar() {
         Shoppage
       </h1>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/shop">Shop</Link>
+        <Link to="/shopping-page">Home</Link>
+        <Link to="/shopping-page/shop">Shop</Link>
       </nav>
     </div>
   );
